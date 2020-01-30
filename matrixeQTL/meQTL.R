@@ -23,7 +23,3 @@ me<-mxeqtl('./GenotypeCNVConrad/CNV_mat','./GenotypeCNVConrad/cnvloc.txt','./Gen
              trans_pval=1e-5);
 me<-mxeqtl('./GenotypeCNV/CNV_mat','./GenotypeCNV/cnvloc.txt','./GenotypeCNV/Methylation-matrix-genotype-Bell_mat','./cpgloc.txt',covariates="",cis_output_file='./GenotypeCNV/methy_cis',cis_pval=0.05,
             model="linear", MAF=0, cis_dist=1000000, missing="NA",trans_output_file='./GenotypeCNV/methy_trans',trans_pval=1e-5);
-
-
-
-                                         trans_pval=1e-5);
