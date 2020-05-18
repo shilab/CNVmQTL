@@ -1,2 +1,2 @@
-This repository includes the data and scripts used for our CNV mQTL manuscript.
+This repository includes the data for our CNV mQTL manuscript.
   CNV/ includes the CNV genotype file (with sample ID and corresponding genotypes) from the 1000 Genomes Project (2010) and Conrad et al. 2009.
