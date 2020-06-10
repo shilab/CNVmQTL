@@ -1,4 +1,4 @@
-setwd("/nas/longleaf/home/jwen6/condiCNVmQTL");
+setwd("~/condiCNVmQTL");
 library(cpgen);
 library(data.table);
 
