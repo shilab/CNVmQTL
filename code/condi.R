@@ -3,8 +3,8 @@ library(cpgen);
 library(data.table);
 
 cnvmQTL <- read.table("1KGgenotype-Conradgenotype/mQTL_CIS_TRANS_P100_twoDatasets.nominalPvalue.overlapRemoved.txt",header = T);
-snpmQTL <- read.table("LDAnalysis/Data/SNPmqtls-Bell-Zhang-Banovich.txt",header =F, sep="\t")
-SNP_init <- as.data.frame(read.table("LDAnalysis/Data/new.genotype.GT.update.txt", header=T, sep="\t"));
+snpmQTL <- read.table("LDAnalysis/SNPmqtls-Bell-Zhang-Banovich.txt",header =F, sep="\t")
+SNP_init <- as.data.frame(read.table("LDAnalysis/new.genotype.GT.update.txt", header=T, sep="\t"));
 SNP <- SNP_init[complete.cases(SNP_init),];
 snpmQTL_sort = snpmQTL[order( snpmQTL[,2], snpmQTL[,3] ),];
 
