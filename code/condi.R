@@ -2,17 +2,17 @@ setwd("/nas/longleaf/home/jwen6/condiCNVmQTL");
 library(cpgen);
 library(data.table);
 
-cnvmQTL <- read.table("/nas/longleaf/home/jwen6/condiCNVmQTL/1KGgenotype-Conradgenotype/mQTL_CIS_TRANS_P100_twoDatasets.nominalPvalue.overlapRemoved.txt",header = T);
-snpmQTL <- read.table("LDAnalysis/Data/SNPmqtls-Bell-Zhang-Banovich.txt",header =F, sep="\t")
-SNP_init <- as.data.frame(read.table("/nas/longleaf/home/jwen6/condiCNVmQTL/LDAnalysis/Data/new.genotype.GT.update.txt", header=T, sep="\t"));
+cnvmQTL <- read.table("1KGgenotype-Conradgenotype/mQTL_CIS_TRANS_P100_twoDatasets.nominalPvalue.overlapRemoved.txt",header = T);
+snpmQTL <- read.table("SNPmqtls-Bell-Zhang-Banovich.txt",header =F, sep="\t")
+SNP_init <- as.data.frame(read.table("/new.genotype.GT.update.txt", header=T, sep="\t"));
 SNP <- SNP_init[complete.cases(SNP_init),];
 snpmQTL_sort = snpmQTL[order( snpmQTL[,2], snpmQTL[,3] ),];
 
 CNV_geno_KG <- read.table("GenotypeCNV/CNV-matrix-diffGenotypeKG-Bell.txt",header = T);
 CNV_geno_Conrad <- read.table("GenotypeCNVConrad/CNV-matrix-GenotypeConrad-Bell.txt",header = T);
 
-methy_KG <- read.table("/nas/longleaf/home/jwen6/condiCNVmQTL/GenotypeCNV/Methylation-matrix-genotype-Bell.txt",header = T);
-methy_Conrad <- read.table("/nas/longleaf/home/jwen6/condiCNVmQTL/GenotypeCNVConrad/Methylation-matrix-GenotypeConrad-Bell.txt",header = T)
+methy_KG <- read.table("GenotypeCNV/Methylation-matrix-genotype-Bell.txt",header = T);
+methy_Conrad <- read.table("GenotypeCNVConrad/Methylation-matrix-GenotypeConrad-Bell.txt",header = T)
 
 res.s <- NULL;
 window=1000000;
