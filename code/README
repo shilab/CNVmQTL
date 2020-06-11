@@ -1,3 +1,3 @@
 This folder includes the code for our CNV mQTL.
 condi.R is used for conditional analysis.
-chr1.R is used to overlap the CNV-mQTL with HiC annotation, just take chr1 as an example and run for the rest chrs in HPC UNCC.
+chr1.R is used to overlap the CNV-mQTL with HiC annotation, just take chr1 as an example and run for the remaining chrs on UNCC HPC.
