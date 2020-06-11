@@ -1,2 +1,7 @@
-This repository includes the data for our CNV mQTL manuscript.
+This repository includes the data for our CNV mQTL manuscript entitled "Association of CNVs with methylation variation" co-authored by 
+Xinghua Shi, Saranya Radhakrishnan, Jia Wen, Jin Yun Chen, Junjie Chen, Brianna Ashlyn Lam, Ryan E. Mills, Barbara E. Stranger, Charles Lee and Sunita R. Setlur (Genoimc Medicine, accepted 2020). 
+
+code/ includes scripts and code developed for this project. 
+
+data/ includes all relevant data in this study.
   CNV/ includes the CNV genotype file (with sample ID and corresponding genotypes) from the 1000 Genomes Project (2010) and Conrad et al. 2009.
