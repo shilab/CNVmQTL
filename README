@@ -6,4 +6,3 @@ code/ includes scripts and code developed for this project.
 data/ includes all relevant data in this study.
   results/ include the CNV mQTLs identified in this study.
   CNV/ includes the CNV genotype file (with sample ID and corresponding genotypes) from the 1000 Genomes Project (2010) and Conrad et al. 2009.
-  LDAnalysis/ includes data for LD analysis between CNV mQTLs with nearby SNPs in the 1000 Genomes Project, and with nearby SNP mQTLs reported in previous studies.
